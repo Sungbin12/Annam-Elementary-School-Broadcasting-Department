@@ -1,0 +1,141 @@
+<!--필수 구역 시작-->
+<html lang="ko">
+    <title>안남초등학교 방송부 | Annam Elementary School Broadcasting Department</title>
+    <meta charset="utf-8">
+    <!--모바일 버전-->
+    <!--<head>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"/>
+    </head>
+    <!--모바일 버전-->
+    <!--필수 구역 끝-->
+<!--예약-->
+<script type="text/javascript">
+ 
+  if (new Date() >= new Date('08/01/2023 08:00:00')            // 언제부터
+      && new Date() < new Date('08/02/2023 08:00:00')) {        // 언제까지 실행하기 
+      alert('서비스 점검 중입니다.\n대체 사이트로 이동합니다.\n-Annam Elementary School Broadcasting Department-');
+      location.href = "error/about blank.html"; // alert에서 확인 누르고 나면 실행되는 코드
+  }
+  </script>
+  <!--예약-->
+  <!--모바일, PC 확인-->
+<script type="text/javascript">
+    var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+    for (var word in mobileKeyWords){
+        if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+            location.href = "mobile/alert.html";
+            break;
+        }
+    }
+    </script>
+    <!--모바일, PC 확인 코드 끝-->
+
+<!--팝업 시작-->
+<script>
+window.onload =function () {
+  window.open('팝업 창/3.html', 'popup02', 'width=575, height=500, scrollbars= 0, toolbar=0, menubar=no, location=no, status=no, top=100');
+}
+</script>
+<!--팝업 끝--><!--팝업을 없애고 싶으면 코드 부분을 주석으로 추가-->
+<!--점검 자동 이동 시작-->
+<!--<script type="text/javascript">
+      window.location.replace('error/about blank.html')
+ </script>
+ <!--점검 자동 이동 끝--><!--점검을 없애고 싶으면 코드 부분을 주석으로 추가-->
+
+    <!--메인 텍스트 시작-->
+<h1>안남초등학교 방송부 | Annam Elementary School Broadcasting Department</h1>
+<pre>안남초등학교 방송부 통합 홈페이지에 오신 걸 환영합니다.</pre>
+      <!--메인 텍스트 끝-->
+      <!--로그인 시작-->
+
+  <!--로그인 자바스크립트 시스템 시작-->
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            
+            var validUsername = 'bangsongbu';
+            var validPassword = 'admin';
+            
+            if (username === validUsername && password === validPassword) {
+                alert('로그인이 완료되었습니다.\n사용 완료 후에는 로그아웃 부탁드립니다.\n-Annam Elementary School Broadcasting Department-');
+                window.location.href = 'Annam Elementary School Broadcasting Department 전체/화면 선택.html';
+            } else {
+                alert('아이디 또는 비밀번호가 올바르지 않습니다.\n다시 시도 해주십시오.');
+            }
+        }
+    </script>
+    <!--alert는 건드리지 마시고 아이디는 var validUsername, 비밀번호는 validPassword입니다. 변경 문의가 들어오면 이 부분을 바꿔서 문자 메세지로 안내 부탁드립니다.!-->
+    <!--로그인 자바스크립트 시스템 끝-->
+</head>
+<body>
+<!--로그인 버튼, 디자인 시작-->
+    <div>
+        <label for="username">아이디:</label>
+        <input type="text" id="username" required>
+    </div>
+    <div>
+        <label for="password">비밀번호:</label>
+        <input type="password" id="password" required>
+        <!--로그인 버튼, 디자인 끝-->
+        <!--아이디, 비밀번호 분실 메세지 시작-->
+
+    <style>
+       {
+      }
+      .jb-text {
+        padding: 15px 20px;
+        background-color: #444444;
+        border-radius: 5px;
+        color: #ffffff;
+        position: absolute;
+        display: none;
+      }
+      .jb-title:hover + .jb-text {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="jb-title">아이디나 비밀번호를 잊어버렸다면?</p>
+    <div class="jb-text">아이디나 비밀번호를 분실 했을 경우에는<br>안남초등학교 5학년 방송부 기술1에 문의해주세요.</div>
+
+    </div>
+    <button onclick="login()">로그인</button>
+
+<!--아이디, 비밀번호 분실 메세지 끝-->
+<br>
+<br>
+<!--IP 로그 기록, 현재 IP 시작-->
+<style>
+        #client-ip {
+          color: #000000;
+        }
+      </style>
+      
+      <div>현재 IP: <span id="client-ip"></span></div>
+      
+      <script>
+        // HTML의 <script> 요소를 생성한다
+        const se = document.createElement('script');
+        // <script> 요소의 src 속성을 설정한다
+        se.src = 'https://ipinfo.io?callback=callback';
+        // <body> 요소의 하위 끝에 붙인다
+        // 그리고 콜백 함수를 호출한다
+        document.body.appendChild(se);
+        // 앞서 생성한 <script> 요소를 제거한다
+        document.body.removeChild(se);
+      
+        // 콜백 함수가 호출된다
+        function callback(data) {
+          document.getElementById('client-ip').textContent = data.ip;
+        }
+      </script>
+      <!--IP 로그 기록, 현재 IP 끝-->
+<br>
+<!---공지사항 시작--->
+<iframe src='공지사항/공지사항.html' width="80%" height="500" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=yes vspace=0></iframe>
+<!---공지사항 끝--->
+      <pre>안남초등학교 방송부 통합 홈페이지 관리 : 박성빈<br><br>html 분류 코드 : Broadcasting department/index1
