@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--All font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  
+      <style>
+        /* 모든 텍스트에 나눔고딕 폰트 적용 */
+        body, p, h2, h3, h4, h5, h6, a, span, div, li, pre {
+          font-family: 'Noto Sans KR', sans-serif;
+        }
+      </style>
+  <!--All font-->    
+  &nbsp;&nbsp;&nbsp;&nbsp;업데이트 진행 중입니다.&nbsp;&nbsp;&nbsp;&nbsp;
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <script>
+    function showTextAtTime(targetTime, text) {
+      var now = new Date();
+      var target = new Date(targetTime);
+    
+      if (now >= target) {
+        document.getElementById("output").innerHTML = "<h1>" + text + "</h1>";
+      } else {
+        var timeDifference = target - now;
+        setTimeout(function() {
+          document.getElementById("output").innerHTML = "<h1>" + text + "</h1>";
+        }, timeDifference);
+      }
+    }
+    
+    // 원하는 시간과 내용을 설정합니다.
+    var targetTime = new Date("2023-09-01T16:00:00");
+    var textToShow = "업데이트 종료 시간 :<br>2023/09/02-08:00:00&nbsp;&nbsp;&nbsp;&nbsp;";
+    
+    // 함수 호출하여 설정한 시간에 텍스트가 나타나도록 합니다.
+    showTextAtTime(targetTime, textToShow);
+    </script>
+    </head>
+    <body>
+    
+    <div id="output"></div>
+    
+    </body>
+    </html>
+    
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>업데이트 로딩</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+    <div class="loading-container">
+        <div class="loading-bar" id="loadingBar"></div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+    

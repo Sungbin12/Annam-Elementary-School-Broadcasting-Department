@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #eefcf1;
+}
+
+.loading-container {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.loading-bar {
+    width: 0;
+    height: 30px;
+    background-color: #3498db;
+    transition: width 1s ease;
+}
