@@ -41,14 +41,14 @@ font-weight: 400;
     <script>
       (function () {
         function resp() {
-        var arrUserIP = ['아이피'];  // 차단할 아이피 입력
+        var arrUserIP = ['125.184.223.214'];  // 차단할 아이피 입력
         var json = JSON.parse(this.responseText);
         for (var i = 0; i < arrUserIP.length; i++) {
           if (arrUserIP[i] == json.ip) {
             // 차단할 아이피 접속 시 보여줄 메시지(특정 주소로만 보내려면 아래 줄 삭제)
-            alert("당신은 접속이 차단되었습니다.")
+            alert("운영 정책을 위반하여 IP가 차단되었습니다.")
             // 다른 곳으로 보낼 URL주소 입력
-            window.location.replace("http://error.com");
+            window.location.replace("htts://bangsongbu.cloud/error/404.html");
           }
         }
       }
@@ -73,11 +73,11 @@ font-weight: 400;
   <!--예약-->
 
 <!--팝업 시작-->
-<script>
+<!--<script>
 window.onload =function () {
   window.open('팝업 창/4.html', 'popup02', 'width=575, height=500, scrollbars= 0, toolbar=0, menubar=no, location=no, status=no, top=100');
 }
-</script>
+</script>-->
 <!--팝업 끝--><!--팝업을 없애고 싶으면 코드 부분을 주석으로 추가-->
 <!--점검 자동 이동 시작-->
 <!--<script type="text/javascript">
