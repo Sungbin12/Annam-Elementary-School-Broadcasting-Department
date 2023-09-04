@@ -41,7 +41,7 @@ font-weight: 400;
     <script>
       (function () {
         function resp() {
-        var arrUserIP = ['125.184.223.214'];  // 차단할 아이피 입력
+        var arrUserIP = ['192.168.219.129'];  // 차단할 아이피 입력
         var json = JSON.parse(this.responseText);
         for (var i = 0; i < arrUserIP.length; i++) {
           if (arrUserIP[i] == json.ip) {
