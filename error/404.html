@@ -1,0 +1,40 @@
+---
+permalink: /404.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../error/styles.css">
+  <title>404 Error</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">페이지를 찾을 수 없습니다!</h1>
+    <p class="description">현재 찾으시고 계시는 페이지인</p>
+    <script>
+      var currentUrlParagraph = document.createElement("p");
+      currentUrlParagraph.id = "currentUrl";
+      
+      var strongElement = document.createElement("strong");
+      strongElement.textContent = window.location.href;
+      
+      currentUrlParagraph.appendChild(document.createTextNode("'"));
+      currentUrlParagraph.appendChild(strongElement);
+      currentUrlParagraph.appendChild(document.createTextNode("'"));
+      currentUrlParagraph.appendChild(document.createTextNode("을 찾을 수 없습니다."));
+
+      var descriptionElement = document.querySelector(".description");
+      descriptionElement.appendChild(currentUrlParagraph);
+      
+      // 추가로 표시할 텍스트
+      var additionalText = document.createTextNode("파일이 삭제되었거나, URL을 제대로 입력하셨는지 확인하십시오.");
+      descriptionElement.appendChild(additionalText);
+  </script>
+
+    <a href="../index.html" class="home-link">메인 페이지</a>
+  </div>
+</body>
+</html>
