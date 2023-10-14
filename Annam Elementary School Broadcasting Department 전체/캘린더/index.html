@@ -297,62 +297,6 @@ if (referrer === desiredURL) {
     10월 18일(수) 정기모임 (방송실)<br>
     10월 25일(수) 정기모임 (방송실)</h3>
     <pre align="center">자세한 내용은 방송부 단톡 확인 바랍니다.</pre>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-        <button class="alert-button" onclick="showAlert()">정품 인증서 다운로드</button>
-    
-        <script>
-            // 정품 인증서 다운로드 경고(alert)을 표시하는 함수
-            function showAlert() {
-                Swal.fire({
-                    icon: 'warning',
-                    title: '정말로 다운로드 하시겠습니까?',
-                    text: '다운로드 시, 안남초등학교 방송부 10월 캘린더가 다운로드 됩니다.',
-                    showCancelButton: true, // 확인 및 취소 버튼을 표시합니다.
-                    confirmButtonText: '확인', // 확인 버튼 텍스트
-                    cancelButtonText: '취소', // 취소 버튼 텍스트
-                  }).then((result) => {
-                if (result.isConfirmed) {
-                    // 확인 버튼을 눌렀을 때 다른 경고 창을 표시하고 3초 후에 다운로드를 시작합니다.
-                    Swal.fire({
-                        icon: 'info',
-                        title: '파일을 불러오는 중입니다.',
-                        timer: 3000, // 3초 동안 보여줍니다.
-                        showConfirmButton: false, // 확인 버튼을 표시하지 않습니다.
-                    });
-                    setTimeout(() => {
-                      
-                        // 3초 후에 두 번째 경고 창을 표시하고 다운로드 함수를 호출합니다.
-                        Swal.fire({
-                            icon: 'success',
-                            title: '불러오기 완료',
-                            text: '확인 버튼을 누르면 다운로드가 시작됩니다!',
-                            confirmButtonText: '확인',
-                          }).then(() => {
-                            // 다운로드 함수를 호출합니다.
-                            startDownload();
-                        });
-                    }, 3000); // 3초 후에 호출합니다.
-                }
-            });
-        }
-
-        // 다운로드 함수를 정의합니다.
-        function startDownload() {
-            // 다운로드할 파일의 URL을 지정합니다.
-            const downloadUrl = '2023-10-Annam Elementary School Broadcasting Department-plan-site.bmp';
-
-            // 새로운 <a> 요소를 만들어 다운로드를 시작합니다.
-            const a = document.createElement('a');
-            a.href = downloadUrl;
-            a.download = '2023-10-Annam Elementary School Broadcasting Department-plan-site.bmp'; // 다운로드될 파일의 이름을 지정합니다.
-            a.style.display = 'none';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        }
-    </script>
-    </body>
-    </html>
     
   <!--<h2 style="color:rgb(159, 159, 159); text-align: center;">등록된 일정이 없습니다.</h2>-->
     <button type="button" onclick="location.href='../all logout.html' ">로그 아웃</button>
