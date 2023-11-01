@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div style="position:fixed;right:10px;">
+
+    <img src="../../Annam Elementary School Broadcasting Department 전체/logo/뒷배경 투명 로고.png" style="width:250px;"/ >
+    <!--All font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <style>
+      /* 모든 텍스트에 나눔고딕 폰트 적용 */
+      body, p, h2, h3, h4, h5, h6, a, span, div, li, pre {
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+    </style>
+<!--All font-->    
+    </div>  
+        <!--F12 막기-->
+        <script type="text/javascript">
+            // F12키 차단
+            $(document).ready(function(){
+              $(document).bind('keydown',function(e){
+                if ( e.keyCode == 123 /* F12 */) {
+                  e.preventDefault();
+                  e.returnValue = false;
+                }
+              });
+            });
+                    
+                    
+            // 우측 클릭 방지 
+            document.onmousedown=disableclick; 
+            status="Right click is not available."; 
+            function disableclick(event){ 
+              if (event.button==2) { 
+                  alert(status); 
+                   return false; 
+              } 
+            }
+            
+              </script>
+              <!--F12 막기 끝-->
+    <title>안남초등학교 방송부 : 관리자 로그인</title>
+        <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"/>
+</head>
+<body>
+    <h1>관리자 로그인</h1>
+    <form id="loginForm">
+        <label for="username">ID :</label>
+        <input type="text" id="username" required><br>
+        <label for="password">PW :</label>
+        <input type="password" id="password" required><br><br>
+        <button type="submit">로그인</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
